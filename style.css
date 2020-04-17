@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "Lato", sans-serif;
+  font-size: 2.3em;
+  color: white;
+  align-content: center;
+  cursor: pointer; }
+  .container .column {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: absolute; }
+  .container .column:before {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.05;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: skew(30deg) scale(1, 1) translate(0, 0);
+    transform: skew(30deg) scale(1, 1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+  .container .column:hover:before {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.05;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: skew(0deg) scale(5) translate(0, 0);
+    transform: skew(0deg) scale(5) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+  .container .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: absolute; }
+  .container .column:nth-child(1) {
+    background-color: #244F75;
+    left: 0;
+    animation-name: num1;
+    animation-duration: 1s; }
+@keyframes num1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  .container .column:nth-child(2) {
+    background-color: #60BFBF;
+    left: 20vw;
+    animation-name: num2;
+    animation-duration: 1s; }
+@keyframes num2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  .container .column:nth-child(3) {
+    background-color: #8C4B7E;
+    left: 40vw;
+    animation-name: num3;
+    animation-duration: 1s; }
+@keyframes num3 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  .container .column:nth-child(4) {
+    background-color: #F8BB44;
+    left: 60vw;
+    animation-name: num4;
+    animation-duration: 1s; }
+@keyframes num4 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  .container .column:nth-child(5) {
+    background-color: #F24B4B;
+    left: 80vw;
+    animation-name: num5;
+    animation-duration: 1s; }
+@keyframes num5 {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/*# sourceMappingURL=style.css.map */

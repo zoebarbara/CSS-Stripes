@@ -1,0 +1,19 @@
+//************************************
+//*           VARIABLES              *
+//************************************
+$color1: #244F75;
+$color2: #60BFBF;
+$color3: #8C4B7E;
+$color4: #F8BB44;
+$color5: #F24B4B;
+$lato: 'Lato', sans-serif;
+
+
+//************************************
+//*             MIXINS               *
+//************************************
+@mixin lato {
+    font-family: $lato;
+    font-size: 2.3em;
+    color: white;
+  }
